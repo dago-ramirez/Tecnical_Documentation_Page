@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+}
+
+body {
+    max-width: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;    
+}
+
+.card {
+    position: fixed;
+    height: 100%;
+    width: 25vw;
+}
+
+nav header {
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+nav div {
+    font-size: 1.2 em;
+    font-weight: 600;
+    width: auto; 
+    height: 555px; 
+    overflow-y: scroll;
+}
+
+body div .documentation {
+    width: 75vw;
+    padding-left: 2%;
+    margin-left: 25vw;
+}
