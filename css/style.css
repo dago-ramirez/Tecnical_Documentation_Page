@@ -2,41 +2,103 @@
     margin: 0px;
 }
 
-body {
-    max-width: fit-content;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;    
+nav {
+    position: fixed;
+    height: 100%;
 }
 
 .card {
-    position: fixed;
     height: 100%;
-    width: 25vw;
 }
 
+/* @media (min-width: 950px) {
+    nav {
+        position: absolute;
+        top: 0;
+    }
+
+    body {
+        display: block;
+    }
+} */
+
 nav header {
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.7em;
     font-weight: bold;
 }
 
-nav div {
-    font-size: 1.2 em;
+nav ul {
+    font-size: 1em;
     font-weight: 600;
-    width: auto; 
-    height: 555px; 
     overflow-y: scroll;
 }
 
-body div .documentation {
-    width: 75vw;
-    padding-left: 2%;
-    margin-left: 25vw;
+main {
+    margin-bottom: 10vw;
 }
+
+main section {
+    color: #4d4e53;
+}
+
+main section header {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 2vw 0;    
+}
+
+main section p {
+    text-align: justify;
+}
+
+main section ul {
+    line-height: 2em;
+}
+
+main section code {
+    background-color: #f7f7f7;
+    white-space: pre;
+    display: block;
+    text-align: left;
+    word-break: normal;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* There are also media queries and mixins for targeting a single 
+segment of screen sizes using the minimum and maximum breakpoint widths.
+// Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
